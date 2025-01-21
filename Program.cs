@@ -32,7 +32,7 @@ namespace C__Adv
             //Cons of Non-Genric collections
             // 1. Boxing
             // 2. Casting from object [refrence type ] to int object type // unboxing [unsafe casting]
-            // 3.
+            
 
 
 
