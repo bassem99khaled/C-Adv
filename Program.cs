@@ -1,10 +1,13 @@
-﻿namespace C__Adv
+﻿using System.Globalization;
+
+namespace C__Adv
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+
         }
     }
 }
