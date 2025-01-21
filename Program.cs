@@ -29,6 +29,11 @@ namespace C__Adv
                 Numbers.Add(i);
             }
 
+            //Cons of Non-Genric collections
+            // 1. Boxing
+            // 2. Casting from object [refrence type ] to int object type // unboxing [unsafe casting]
+            // 3.
+
 
 
 
@@ -52,6 +57,8 @@ namespace C__Adv
 
 
             Console.WriteLine($"Count = {Numbers.Count}, Capacity = {Numbers.Capacity}");
+
+
 
 
             
