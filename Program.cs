@@ -206,19 +206,69 @@ namespace C__Adv
 
             #region Generic Collections - LinkedList
 
-         //  LinkedList<int> Numbers = new LinkedList<int>();
-         //
-         //
-         //  LinkedList<int> FirstNode = Numbers.AddFirst(1);
-         //  LinkedList<int> FourNode = Numbers.AddLast(3);
-         //
-         //  LinkedListNode<int> SecondNode = Numbers.AddAfter(FirstNode , 2);
-         //
-         //  LinkedList<int> ThirdNode = Numbers.AddBefore(FourthNode , 3);
-         //
-         //  Console.WriteLine(FirstNode.previous.Value); // 2
+            //  LinkedList<int> Numbers = new LinkedList<int>();
+            //
+            //
+            //  LinkedList<int> FirstNode = Numbers.AddFirst(1);
+            //  LinkedList<int> FourNode = Numbers.AddLast(3);
+            //
+            //  LinkedListNode<int> SecondNode = Numbers.AddAfter(FirstNode , 2);
+            //
+            //  LinkedList<int> ThirdNode = Numbers.AddBefore(FourthNode , 3);
+            //
+            //  Console.WriteLine(FirstNode.previous.Value); // 2
             #endregion
 
+            #region GenericUriParser Collections _ Stack
+
+            Stack<int> stack = new Stack<int> ();
+
+            stack.Push (1);
+            stack.Push (2);
+            stack.Push (3);
+            stack.Push (4);
+            Console.WriteLine(stack.TryPop(out int Values01)); // 4
+            Console.WriteLine(stack.TryPop(out int Values02));  // 3 
+            Console.WriteLine(stack.TryPop(out int Values03)); // 2
+            Console.WriteLine(stack.TryPop(out int Values04));  // 1
+
+
+            Console.WriteLine(stack.Peek());
+            Console.WriteLine(stack.Peek());
+            Console.WriteLine(stack.Peek());
+
+            Console.WriteLine(stack.Pop());
+
+            Console.WriteLine("__________________");
+
+            //foreach (int number in stack )
+            //Console. writeline(number);
+
+
+            #endregion
+
+            #region  Generic Collections - Queue
+
+            Queue<int> queue = new Queue<int> ();
+
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+
+            Console.WriteLine(queue.Dequeue()); // 1
+            Console.WriteLine(queue.Dequeue()); // 2
+            Console.WriteLine(queue.TryDequeue(out int Value03)); // 3
+
+
+            Console.WriteLine("***************");
+
+
+            foreach(int i in queue) 
+            
+        Console.WriteLine(i);
+
+
+            #endregion
         }
     }
 }
