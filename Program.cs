@@ -43,8 +43,49 @@
             //      }     
             //     Console.WriteLine(count);
             //  }
-            
-        
+
+
+
+
+            #endregion
+
+            #region 2. Given a number N and an array of N numbers. Determine if it's palindrome or not.
+            //    Ex:
+            //   Input:   5
+            //  1 3 2 3 1
+            //  Output: YES
+  
+
+            //     int n = int.Parse(Console.ReadLine());
+            //
+            //
+            //     int[] array = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+            //
+            //
+            //     bool isPalindrome = IsPalindrome(array);
+            //
+            //  
+            //     Console.WriteLine(isPalindrome ? "YES" : "NO");
+            // 
+            //
+            // static bool IsPalindrome(int[] array)
+            // {
+            //     int left = 0, right = array.Length - 1;
+            //
+            //     while (left < right)
+            //     {
+            //         if (array[left] != array[right])
+            //         {
+            //             return false;
+            //         }
+            //         left++;
+            //         right--;
+            //     }
+            //
+            //     return true;
+            // }
+             //
+
 
 
         #endregion
