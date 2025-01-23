@@ -275,28 +275,90 @@ namespace C__Adv
             //   
 
 
-    
-                
-              //  Queue queue = new Queue();
-              //
-              // 
-              //  queue.Enqueue(1);           
-              //  queue.Enqueue("Apple");    
-              //  queue.Enqueue(5.28);         
-              //
-              //  
-              //  Console.WriteLine("Queue contents:");
-              //  foreach (var item in queue)
-              //  {
-              //      Console.WriteLine(item);
-              //  }
-              //
-              // 
-              //  Console.WriteLine("\nDequeue operations:");
-              //  while (queue.Count > 0)
-              //  {
-              //      Console.WriteLine($"Dequeued: {queue.Dequeue()}");
-              //  }
+
+
+            //  Queue queue = new Queue();
+            //
+            // 
+            //  queue.Enqueue(1);           
+            //  queue.Enqueue("Apple");    
+            //  queue.Enqueue(5.28);         
+            //
+            //  
+            //  Console.WriteLine("Queue contents:");
+            //  foreach (var item in queue)
+            //  {
+            //      Console.WriteLine(item);
+            //  }
+            //
+            // 
+            //  Console.WriteLine("\nDequeue operations:");
+            //  while (queue.Count > 0)
+            //  {
+            //      Console.WriteLine($"Dequeued: {queue.Dequeue()}");
+            //  }
+
+
+
+
+            #endregion
+
+            #region 8. Create a function that pushes a series of integers onto a stack. Then, search for a target integer in the stack. 
+            // If the target is found, print a message indicating that the target was found how many elements were checked before finding the target
+            //     (“Target was found successfully and the count = 5”). 
+            // If the target is not found, print a message indicating that the target was not found(“Target was not found”).
+
+
+
+         //  static void SearchInStack(Stack<int> stack, int target)
+         //  {
+         //      int count = 0;
+         //      bool found = false;
+         //
+         //      Stack<int> tempStack = new Stack<int>();
+         //
+         //
+         //      while (stack.Count > 0)
+         //      {
+         //          count++;
+         //          int current = stack.Pop();
+         //          tempStack.Push(current);
+         //
+         //          if (current == target)
+         //          {
+         //              found = true;
+         //              Console.WriteLine($"Target found , and the count = {count}");
+         //              break;
+         //          }
+         //      }
+         //
+         //
+         //      while (tempStack.Count > 0)
+         //      {
+         //          stack.Push(tempStack.Pop());
+         //      }
+         //
+         //      if (!found)
+         //      {
+         //          Console.WriteLine("Target was not found");
+         //      }
+         //  }
+         //
+         //  Stack<int> stack = new Stack<int>();
+         //      PushIntegersintoStack(stack, new int[] { 10, 20, 30, 40, 50 });
+         //     
+         //      int target = 30; 
+         //      SearchInStack(stack, target);
+         //          
+         //  static void PushIntegersintoStack(Stack<int> stack, int[] values)
+         //  {
+         //      foreach (int value in values)
+         //      {
+         //          stack.Push(value);
+         //      }
+         //  }
+         //
+          
             
         
 
@@ -304,6 +366,6 @@ namespace C__Adv
         #endregion
 
 
-        }
     }
+}
 }
