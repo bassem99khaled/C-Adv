@@ -148,60 +148,82 @@
 
 
 
-          //
-          //     string input = Console.ReadLine();
-          //
-          //     if (IsBalanced(input))
-          //     {
-          //         Console.WriteLine("Balanced");
-          //     }
-          //     else
-          //     {
-          //         Console.WriteLine("Not Balanced");
-          //     }
-          // 
-          //
-          // static bool IsBalanced(string s)
-          // {
-          //     Stack<char> stack = new Stack<char>();
-          //
-          //     foreach (char ch in s)
-          //     {
-          //         
-          //         if (ch == '(' || ch == '{' || ch == '[')
-          //         {
-          //             stack.Push(ch);
-          //         }
-          //      
-          //         else if (ch == ')' || ch == '}' || ch == ']')
-          //         {
-          //             if (stack.Count == 0) return false; 
-          //
-          //             char top = stack.Pop();
-          //             if (!IsMatching(top, ch)) return false;
-          //         }
-          //     }
-          //
+            //
+            //     string input = Console.ReadLine();
+            //
+            //     if (IsBalanced(input))
+            //     {
+            //         Console.WriteLine("Balanced");
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine("Not Balanced");
+            //     }
+            // 
+            //
+            // static bool IsBalanced(string s)
+            // {
+            //     Stack<char> stack = new Stack<char>();
+            //
+            //     foreach (char ch in s)
+            //     {
+            //         
+            //         if (ch == '(' || ch == '{' || ch == '[')
+            //         {
+            //             stack.Push(ch);
+            //         }
+            //      
+            //         else if (ch == ')' || ch == '}' || ch == ']')
+            //         {
+            //             if (stack.Count == 0) return false; 
+            //
+            //             char top = stack.Pop();
+            //             if (!IsMatching(top, ch)) return false;
+            //         }
+            //     }
+            //
+            //    
+            //     return stack.Count == 0;
+            // }
+            //
+            // static bool IsMatching(char open, char close)
+            // {
+            //     return (open == '(' && close == ')') ||
+            //            (open == '{' && close == '}') ||
+            //            (open == '[' && close == ']');
+            // }
+
+
+
+
+            #endregion
+
+            #region 5. Given an array, implement a function to remove duplicate elements from an array
+
+
+          
           //    
-          //     return stack.Count == 0;
-          // }
-          //
-          // static bool IsMatching(char open, char close)
+          // static int[] RemoveDuplicates(int[] array)
           // {
-          //     return (open == '(' && close == ')') ||
-          //            (open == '{' && close == '}') ||
-          //            (open == '[' && close == ']');
+          //     HashSet<int> uniqueElements = new HashSet<int>(array);
+          //     return new List<int>(uniqueElements).ToArray();
           // }
-        
+          // 
+          // int[] array = { 1, 2, 2, 3, 4, 4, 5 };
+          //
+          //
+          // int[] result = RemoveDuplicates(array);
+          //
+          //
+          // Console.WriteLine(string.Join(" ", result));
+          //
+
+
+            #endregion
 
 
 
-        #endregion
 
-
-
-
-
+        }
     }
-}
 }
