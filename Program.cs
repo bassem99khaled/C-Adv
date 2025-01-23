@@ -310,62 +310,113 @@ namespace C__Adv
 
 
 
-         //  static void SearchInStack(Stack<int> stack, int target)
-         //  {
-         //      int count = 0;
-         //      bool found = false;
-         //
-         //      Stack<int> tempStack = new Stack<int>();
-         //
-         //
-         //      while (stack.Count > 0)
-         //      {
-         //          count++;
-         //          int current = stack.Pop();
-         //          tempStack.Push(current);
-         //
-         //          if (current == target)
-         //          {
-         //              found = true;
-         //              Console.WriteLine($"Target found , and the count = {count}");
-         //              break;
-         //          }
-         //      }
-         //
-         //
-         //      while (tempStack.Count > 0)
-         //      {
-         //          stack.Push(tempStack.Pop());
-         //      }
-         //
-         //      if (!found)
-         //      {
-         //          Console.WriteLine("Target was not found");
-         //      }
-         //  }
-         //
-         //  Stack<int> stack = new Stack<int>();
-         //      PushIntegersintoStack(stack, new int[] { 10, 20, 30, 40, 50 });
-         //     
-         //      int target = 30; 
-         //      SearchInStack(stack, target);
-         //          
-         //  static void PushIntegersintoStack(Stack<int> stack, int[] values)
-         //  {
-         //      foreach (int value in values)
-         //      {
-         //          stack.Push(value);
-         //      }
-         //  }
-         //
-          
+            //  static void SearchInStack(Stack<int> stack, int target)
+            //  {
+            //      int count = 0;
+            //      bool found = false;
+            //
+            //      Stack<int> tempStack = new Stack<int>();
+            //
+            //
+            //      while (stack.Count > 0)
+            //      {
+            //          count++;
+            //          int current = stack.Pop();
+            //          tempStack.Push(current);
+            //
+            //          if (current == target)
+            //          {
+            //              found = true;
+            //              Console.WriteLine($"Target found , and the count = {count}");
+            //              break;
+            //          }
+            //      }
+            //
+            //
+            //      while (tempStack.Count > 0)
+            //      {
+            //          stack.Push(tempStack.Pop());
+            //      }
+            //
+            //      if (!found)
+            //      {
+            //          Console.WriteLine("Target was not found");
+            //      }
+            //  }
+            //
+            //  Stack<int> stack = new Stack<int>();
+            //      PushIntegersintoStack(stack, new int[] { 10, 20, 30, 40, 50 });
+            //     
+            //      int target = 30; 
+            //      SearchInStack(stack, target);
+            //          
+            //  static void PushIntegersintoStack(Stack<int> stack, int[] values)
+            //  {
+            //      foreach (int value in values)
+            //      {
+            //          stack.Push(value);
+            //      }
+            //  }
+            //
+
+
+
+
+
+            #endregion
+
+            #region 9. Given two arrays, find their intersection. Each element in the result should appear as many times as it shows in both arrays.
+            //      Ex : 
+            //      Input :5 , 3 [1,2,3,4,4] , [10,4,4]
+            //      Output : [4,4]
+
+
+
             
-        
+            //       static List<int> FindIntersection(int[] array1, int[] array2)
+            //       {
+            //           Array.Sort(array1); 
+            //           Array.Sort(array2); 
+            //
+            //           List<int> intersection = new List<int>();
+            //           int i = 0, j = 0;
+            //
+            //           
+            //           while (i < array1.Length && j < array2.Length)
+            //           {
+            //               if (array1[i] == array2[j])
+            //               {
+            //                   intersection.Add(array1[i]);
+            //                   i++;
+            //                   j++;
+            //               }
+            //               else if (array1[i] < array2[j])
+            //               {
+            //                   i++;
+            //               }
+            //               else
+            //               {
+            //                   j++;
+            //               }
+            //           }
+            //
+            //           return intersection;
+            //       }
+            //   
+            //  
+            //   int[] array1 = { 1, 2, 3, 4, 4 };
+            //   int[] array2 = { 10, 4, 4 };
+            //
+            //   
+            //   List<int> result = FindIntersection(array1, array2);
+            //
+            //  
+            //   Console.WriteLine(string.Join(" ", result));
+            
+
 
 
         #endregion
-
-
     }
 }
 }
