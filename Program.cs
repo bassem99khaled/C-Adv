@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace C__Adv
 {
@@ -225,47 +227,83 @@ namespace C__Adv
 
             #region 6. Given an array list , implement a function to remove all odd numbers from it.
 
+
+
+
+            //   static void RemoveOdds(ArrayList list)
+            //   {
+            //       for (int i = list.Count - 1; i >= 0; i--)
+            //       {
+            //           if ((int)list[i] % 2 != 0) 
+            //           {
+            //               list.RemoveAt(i); 
+            //           }
+            //       }
+            //   }
+            //
+            //   
+            //   static void PrintArrayList(ArrayList list)
+            //   {
+            //       foreach (var item in list)
+            //       {
+            //           Console.Write(item + " ");
+            //       }
+            //       Console.WriteLine();
+            //   }
+            //
+            //
+            //  ArrayList numbers = new ArrayList { 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10 , 11 ,12};
+            //
+            //  Console.WriteLine("Original ArrayList:");
+            //          PrintArrayList(numbers);
+            //
+            //
+            //  RemoveOdds(numbers);
+            //
+            //  Console.WriteLine("Array after removing odd numbers:");
+            //          PrintArrayList(numbers);
+            //
+
+
+            #endregion
+
+            #region 7. Implement a queue that can hold different data types. 
+            //     And insert the following data:
+            //     queue.Enqueue(1)
+            //   queue.Enqueue(“Apple”)
+            //   queue.Enqueue(5.28)
+            //   
+
+
+    
+                
+              //  Queue queue = new Queue();
+              //
+              // 
+              //  queue.Enqueue(1);           
+              //  queue.Enqueue("Apple");    
+              //  queue.Enqueue(5.28);         
+              //
+              //  
+              //  Console.WriteLine("Queue contents:");
+              //  foreach (var item in queue)
+              //  {
+              //      Console.WriteLine(item);
+              //  }
+              //
+              // 
+              //  Console.WriteLine("\nDequeue operations:");
+              //  while (queue.Count > 0)
+              //  {
+              //      Console.WriteLine($"Dequeued: {queue.Dequeue()}");
+              //  }
             
-      
-            
-         //   static void RemoveOdds(ArrayList list)
-         //   {
-         //       for (int i = list.Count - 1; i >= 0; i--)
-         //       {
-         //           if ((int)list[i] % 2 != 0) 
-         //           {
-         //               list.RemoveAt(i); 
-         //           }
-         //       }
-         //   }
-         //
-         //   
-         //   static void PrintArrayList(ArrayList list)
-         //   {
-         //       foreach (var item in list)
-         //       {
-         //           Console.Write(item + " ");
-         //       }
-         //       Console.WriteLine();
-         //   }
-         //
-         //
-         //  ArrayList numbers = new ArrayList { 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10 , 11 ,12};
-         //
-         //  Console.WriteLine("Original ArrayList:");
-         //          PrintArrayList(numbers);
-         //
-         //
-         //  RemoveOdds(numbers);
-         //
-         //  Console.WriteLine("Array after removing odd numbers:");
-         //          PrintArrayList(numbers);
-         //
+        
 
 
         #endregion
 
 
+        }
     }
-}
 }
