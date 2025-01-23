@@ -54,7 +54,7 @@
             //   Input:   5
             //  1 3 2 3 1
             //  Output: YES
-  
+
 
             //     int n = int.Parse(Console.ReadLine());
             //
@@ -84,60 +84,124 @@
             //
             //     return true;
             // }
-             //
+            //
+
+
+
+            #endregion
+
+            #region 3. Given a Queue, implement a function to reverse the elements of a queue using a stack.
+
+
+            //    Queue<int> queue = new Queue<int>();
+            //
+            //    queue.Enqueue(1);
+            //    queue.Enqueue(2);
+            //    queue.Enqueue(3);
+            //    queue.Enqueue(4);
+            //
+            //
+            //    Console.WriteLine("Original Queue:");
+            //
+            //    ReverseQueueUsingStack(queue);
+            //
+            //    Console.WriteLine("Reversed Queue:");
+            //   
+            //
+            //
+            //
+            //static void ReverseQueueUsingStack(Queue<int> queue)
+            //{
+            //    Stack<int> stack = new Stack<int>();
+            //
+            //    while (queue.Count > 0)
+            //    {
+            //        stack.Push(queue.Dequeue());
+            //    }
+            //
+            //   
+            //    while (stack.Count > 0)
+            //    {
+            //        queue.Enqueue(stack.Pop());
+            //    }
+            //}
+            //
+            //
+            //static void PrintQueue(Queue<int> queue)
+            //{
+            //    foreach (int item in queue)
+            //    {
+            //        Console.Write(item + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+
+            #endregion
+
+            #region 4. Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
+            //  Ex:
+            //  Input:   [()] { }
+            //  Output:  Balanced
+
+
+
+
+          //
+          //     string input = Console.ReadLine();
+          //
+          //     if (IsBalanced(input))
+          //     {
+          //         Console.WriteLine("Balanced");
+          //     }
+          //     else
+          //     {
+          //         Console.WriteLine("Not Balanced");
+          //     }
+          // 
+          //
+          // static bool IsBalanced(string s)
+          // {
+          //     Stack<char> stack = new Stack<char>();
+          //
+          //     foreach (char ch in s)
+          //     {
+          //         
+          //         if (ch == '(' || ch == '{' || ch == '[')
+          //         {
+          //             stack.Push(ch);
+          //         }
+          //      
+          //         else if (ch == ')' || ch == '}' || ch == ']')
+          //         {
+          //             if (stack.Count == 0) return false; 
+          //
+          //             char top = stack.Pop();
+          //             if (!IsMatching(top, ch)) return false;
+          //         }
+          //     }
+          //
+          //    
+          //     return stack.Count == 0;
+          // }
+          //
+          // static bool IsMatching(char open, char close)
+          // {
+          //     return (open == '(' && close == ')') ||
+          //            (open == '{' && close == '}') ||
+          //            (open == '[' && close == ']');
+          // }
+        
 
 
 
         #endregion
+
+
+
+
+
     }
-        #region 3. Given a Queue, implement a function to reverse the elements of a queue using a stack.
-
- 
-      //    Queue<int> queue = new Queue<int>();
-      //
-      //    queue.Enqueue(1);
-      //    queue.Enqueue(2);
-      //    queue.Enqueue(3);
-      //    queue.Enqueue(4);
-      //
-      //
-      //    Console.WriteLine("Original Queue:");
-      //
-      //    ReverseQueueUsingStack(queue);
-      //
-      //    Console.WriteLine("Reversed Queue:");
-      //   
-      //
-      //
-      //
-      //static void ReverseQueueUsingStack(Queue<int> queue)
-      //{
-      //    Stack<int> stack = new Stack<int>();
-      //
-      //    while (queue.Count > 0)
-      //    {
-      //        stack.Push(queue.Dequeue());
-      //    }
-      //
-      //   
-      //    while (stack.Count > 0)
-      //    {
-      //        queue.Enqueue(stack.Pop());
-      //    }
-      //}
-      //
-      //
-      //static void PrintQueue(Queue<int> queue)
-      //{
-      //    foreach (int item in queue)
-      //    {
-      //        Console.Write(item + " ");
-      //    }
-      //    Console.WriteLine();
-      //}
-    
-
-
-    #endregion
 }
 }
