@@ -1,4 +1,6 @@
-﻿namespace C__Adv
+﻿using System.Collections;
+
+namespace C__Adv
 {
     internal class Program
     {
@@ -201,29 +203,69 @@
             #region 5. Given an array, implement a function to remove duplicate elements from an array
 
 
-          
-          //    
-          // static int[] RemoveDuplicates(int[] array)
-          // {
-          //     HashSet<int> uniqueElements = new HashSet<int>(array);
-          //     return new List<int>(uniqueElements).ToArray();
-          // }
-          // 
-          // int[] array = { 1, 2, 2, 3, 4, 4, 5 };
-          //
-          //
-          // int[] result = RemoveDuplicates(array);
-          //
-          //
-          // Console.WriteLine(string.Join(" ", result));
-          //
+
+            //    
+            // static int[] RemoveDuplicates(int[] array)
+            // {
+            //     HashSet<int> uniqueElements = new HashSet<int>(array);
+            //     return new List<int>(uniqueElements).ToArray();
+            // }
+            // 
+            // int[] array = { 1, 2, 2, 3, 4, 4, 5 };
+            //
+            //
+            // int[] result = RemoveDuplicates(array);
+            //
+            //
+            // Console.WriteLine(string.Join(" ", result));
+            //
 
 
             #endregion
 
+            #region 6. Given an array list , implement a function to remove all odd numbers from it.
+
+            
+      
+            
+         //   static void RemoveOdds(ArrayList list)
+         //   {
+         //       for (int i = list.Count - 1; i >= 0; i--)
+         //       {
+         //           if ((int)list[i] % 2 != 0) 
+         //           {
+         //               list.RemoveAt(i); 
+         //           }
+         //       }
+         //   }
+         //
+         //   
+         //   static void PrintArrayList(ArrayList list)
+         //   {
+         //       foreach (var item in list)
+         //       {
+         //           Console.Write(item + " ");
+         //       }
+         //       Console.WriteLine();
+         //   }
+         //
+         //
+         //  ArrayList numbers = new ArrayList { 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10 , 11 ,12};
+         //
+         //  Console.WriteLine("Original ArrayList:");
+         //          PrintArrayList(numbers);
+         //
+         //
+         //  RemoveOdds(numbers);
+         //
+         //  Console.WriteLine("Array after removing odd numbers:");
+         //          PrintArrayList(numbers);
+         //
 
 
+        #endregion
 
-        }
+
     }
+}
 }
